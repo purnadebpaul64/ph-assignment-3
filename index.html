@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-    <!-- tailwind cdn -->
+    <!-- daisiui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -39,10 +44,59 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Browse 4 Pets</title>
   </head>
-  <body>
+  <body class="font-sora">
     <!-- ///// HEADER START ///// -->
     <header>
-      <h1 class="font-adlam">hello world</h1>
+      <!-- nav start -->
+      <nav class="border-b-[1px] border-dark lg:border-none bg-secondary py-5">
+        <div
+          class="w-full px-5 mx-auto flex justify-between items-center lg:hidden"
+        >
+          <img class="lg:hidden" src="./c1-assets/logo-header.png" alt="" />
+          <div class="dropdown dropdown-end">
+            <i tabindex="0" class="fa-solid fa-bars text-3xl lg:hidden"></i>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="hidden max-w-screen-xl mx-auto px-4 lg:px-20 lg:flex justify-between items-center"
+        >
+          <!-- logo part -->
+          <div class="flex items-center gap-3 lg:text-xl xl:text-2xl">
+            <img src="./c1-assets/logo-header.png" alt="" />
+            <h2>Browse<span class="text-accent">4</span>Pets</h2>
+          </div>
+          <!-- link part -->
+          <div>
+            <ul class="flex gap-8 lg:text-sm xl:text-lg">
+              <li>Find a pet</li>
+              <li>Breeds</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <!-- buttons part -->
+          <div class="flex gap-4 items-center lg:text-sm xl:text-lg">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="px-6 py-1 outline outline-accent rounded-md">
+              Login
+            </button>
+            <button
+              class="px-6 py-1 bg-accent outline outline-accent rounded-md"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
     </header>
     <!-- ///// HEADER END ///// -->
 
