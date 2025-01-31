@@ -49,11 +49,12 @@
     <header>
       <!-- nav start -->
       <nav class="border-b-[1px] border-dark lg:border-none bg-secondary py-5">
+        <!-- mobile nav -->
         <div
-          class="w-full px-5 mx-auto flex justify-between items-center lg:hidden"
+          class="w-full px-5 md:px-10 mx-auto flex justify-between items-center lg:hidden"
         >
           <img class="lg:hidden" src="./c1-assets/logo-header.png" alt="" />
-          <div class="dropdown dropdown-end">
+          <div class="dropdown dropdown-end z-20">
             <i tabindex="0" class="fa-solid fa-bars text-3xl lg:hidden"></i>
             <ul
               tabindex="0"
@@ -65,6 +66,7 @@
             </ul>
           </div>
         </div>
+        <!-- large device nav -->
         <div
           class="hidden max-w-screen-xl mx-auto px-4 lg:px-20 lg:flex justify-between items-center"
         >
@@ -97,6 +99,34 @@
         </div>
       </nav>
       <!-- nav end -->
+
+      <!-- hero start -->
+      <div
+        class="w-full px-4 mx-auto mt-8 md:max-w-screen-xl md:px-10 lg:px-20 md:mt-16"
+      >
+        <div class="relative">
+          <!-- text part -->
+          <div class="space-y-4 absolute md:w-4/6 lg:w-6/12">
+            <h1
+              class="text-3xl font-bold lg:text-4xl lg:leading-snug xl:text-5xl xl:leading-snug"
+            >
+              Pamper Your Pet,<br />Because They Deserve<br />the Best
+            </h1>
+            <p class="">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button class="px-6 py-1 rounded-lg bg-accent">Find a pet</button>
+          </div>
+          <!-- img part -->
+          <div
+            class="absolute -z-10 translate-y-[185px] sm:translate-y-12 md:-translate-y-4 lg:-translate-y-8"
+          >
+            <img src="./c1-assets/cat-big.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- hero end -->
     </header>
     <!-- ///// HEADER END ///// -->
 
